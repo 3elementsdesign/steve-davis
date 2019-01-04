@@ -1,0 +1,42 @@
+$circle-size: 300px;
+
+.c-venn {
+  width: 100%;
+  position: relative;
+  height: $circle-size;
+}
+
+.c-venn__circle {
+  width: $circle-size;
+  height: $circle-size;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: calc(#{-$circle-size} / 2);
+}
+
+.c-venn__circle--ux-designer {
+  margin-left: calc(#{-$circle-size} * 1.25);
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.c-venn__circle--ux-engineer {
+  background: rgba(0, 0, 255, 0.5);
+}
+
+.c-venn__circle--js-engineer {
+  margin-left: calc(#{$circle-size} / 4);
+  background: rgba(0, 255, 0, 0.5);
+}
+
+.c-venn__name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25em;
+}
